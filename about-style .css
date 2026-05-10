@@ -1,0 +1,112 @@
+0* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  direction: rtl;
+}
+
+.navbar {
+  background-color: #4a3623;
+  padding: 10px 15px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.logo {
+  float: right;
+  color: #e6b422;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 2.2;
+}
+.nav-menu {
+  float: left;
+}
+.nav-menu a {
+  color: #eee;
+  text-decoration: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-size: 0.95rem;
+}
+.nav-menu a:hover {
+  background-color: #7b5e3b;
+}
+.nav-menu a.active {
+  background-color: #b38b5b;
+  color: #fff;
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.card h2 {
+  color: #4a3623;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.contact-table td {
+  padding: 8px 5px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.footer {
+  background-color: #4a3623;
+  color: #ccc;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .nav-menu {
+    float: none;
+    text-align: center;
+  }
+  .nav-menu a {
+    display: inline-block;
+    margin: 3px;
+  }
+}
